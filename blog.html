@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="container" style="padding-top: 60px;">
+  <h2 class="section-heading">Updates</h2>
+
+  {% if site.posts.size > 0 %}
+  <ul class="posts-list">
+    {% for post in site.posts %}
+    <li class="post-item">
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color: var(--text-secondary); padding: 40px 0;">No posts yet. Check back soon.</p>
+  {% endif %}
+</section>

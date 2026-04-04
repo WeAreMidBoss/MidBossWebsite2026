@@ -1,0 +1,35 @@
+title: MidBoss
+description: "Games and media production studio. Creators of Read Only Memories, Gaming In Color, and more."
+url: "https://midboss.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections for game catalog
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
+    sort_by: order
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE

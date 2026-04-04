@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <img src="{{ '/assets/imgs/MidBossLogo.svg' | relative_url }}" alt="MidBoss">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/works' | relative_url }}" {% if page.url contains '/works' or page.url contains '/games' %}class="active"{% endif %}>Works</a>
+      <a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a>
+      <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
+      <a href="{{ '/contact' | relative_url }}" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>

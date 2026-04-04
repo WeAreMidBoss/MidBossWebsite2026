@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <img src="{{ '/assets/imgs/MidBossLogoCastle.svg' | relative_url }}" alt="MidBoss" class="hero-logo">
+    <h1>Games. Media. <span class="accent">Stories that matter.</span></h1>
+    <p>MidBoss is a games and media production studio. Creators of the Read Only Memories franchise, Gaming In Color, and more.</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-heading">Our Works</h2>
+  <div class="games-grid">
+    {% assign sorted_games = site.games | sort: 'order' %}
+    {% for game in sorted_games %}
+    <a href="{{ game.url | relative_url }}" class="game-card" style="text-decoration: none; color: inherit;">
+      {% if game.image %}
+      <img src="{{ game.image | relative_url }}" alt="{{ game.title }}" class="game-card-img">
+      {% endif %}
+      <div class="game-card-body">
+        <h3>{{ game.title }}</h3>
+        <div class="game-card-meta">{{ game.media }} | {{ game.release_date }}</div>
+        <p>{{ game.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section class="container">
+  <h2 class="section-heading">Latest Updates</h2>
+  <ul class="posts-list">
+    {% for post in site.posts limit:5 %}
+    <li class="post-item">
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

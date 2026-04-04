@@ -1,0 +1,31 @@
+---
+layout: default
+title: Works
+permalink: /works/
+---
+
+<section class="container" style="padding-top: 60px;">
+  <h2 class="section-heading">All Works</h2>
+  <div class="games-grid">
+    {% assign sorted_games = site.games | sort: 'order' %}
+    {% for game in sorted_games %}
+    <a href="{{ game.url | relative_url }}" class="game-card" style="text-decoration: none; color: inherit;">
+      {% if game.image %}
+      <img src="{{ game.image | relative_url }}" alt="{{ game.title }}" class="game-card-img">
+      {% endif %}
+      <div class="game-card-body">
+        <h3>{{ game.title }}</h3>
+        <div class="game-card-meta">{{ game.media }} | {{ game.release_date }}</div>
+        <p>{{ game.excerpt }}</p>
+        {% if game.links %}
+        <div class="game-card-links">
+          {% for link in game.links %}
+          <span style="font-family: var(--font-display); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 14px; border: 1px solid var(--border-accent); border-radius: 4px; color: var(--accent-cyan);">{{ link.label }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
