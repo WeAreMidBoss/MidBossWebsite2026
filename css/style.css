@@ -269,6 +269,7 @@ body::after {
   font-weight: 700;
   margin-bottom: 4px;
   color: var(--text-primary);
+  min-height: 2.8em;
 }
 
 .game-card-meta {
