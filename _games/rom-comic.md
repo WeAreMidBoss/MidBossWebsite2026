@@ -1,5 +1,5 @@
 ---
-title: "Read Only Memories: Trade Paperback Comic"
+title: "Read Only Memories: Paperback Comic Series by IDW"
 media: Comic
 release_date: "2019"
 image: /assets/imgs/ComicWorks3.png
