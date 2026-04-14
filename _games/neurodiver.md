@@ -3,7 +3,7 @@ title: "Read Only Memories: NEURODIVER"
 media: Game
 release_date: "2024"
 image: /assets/imgs/Neurodiver_W3.jpg
-order: 1
+order: 3
 excerpt: "Take on the role of ES88, a gifted esper, and hunt down the Golden Butterfly in the memories of Neo-San Francisco's citizens."
 links:
   - label: Steam
