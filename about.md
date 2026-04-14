@@ -13,7 +13,7 @@ permalink: /about/
       We create unique experiences set in the worlds we're becoming, exploring technology, identity, and consequence with honesty and imagination.
     </li>
     <li>
-      <strong>Characters who deserve to be here</strong>
+      <strong>Characters you'll actually care about</strong>
       Our stories feature underrepresented voices at the center, not the margins. Complex, real, and worth caring about.
     </li>
     <li>
