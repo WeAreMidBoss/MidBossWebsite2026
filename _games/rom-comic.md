@@ -2,7 +2,7 @@
 title: "Read Only Memories: Trade Paperback Comic"
 media: Comic
 release_date: "2019"
-image: /assets/imgs/ComicWorks3.png
+image: /assets/imgs/ROMComicLogo.png
 order: 2
 excerpt: "Set between 2064 and NEURODIVER, IDW's series features Lexi Rivers on a case that takes her to the beaches of Santa Cruz."
 links:
