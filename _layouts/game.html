@@ -6,7 +6,9 @@ layout: default
     <p class="post-date">{{ page.media }} | {{ page.release_date }}</p>
     <h1>{{ page.title }}</h1>
   </div>
-  {% if page.image %}
+  {% if page.logo %}
+  <img src="{{ page.logo | relative_url }}" alt="{{ page.title }}" style="max-width: 480px; display: block; margin-bottom: 32px;">
+  {% elsif page.image %}
   <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="border-radius: 8px; margin-bottom: 32px;">
   {% endif %}
   {{ content }}
