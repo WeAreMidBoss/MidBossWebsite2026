@@ -1,5 +1,6 @@
 ---
-title: "Read Only Memories: Paperback Comic Series by IDW"
+title: "Read Only Memories:"
+title_line2: "Paperback Comic Series by IDW"
 media: Comic
 release_date: "2019"
 image: /assets/imgs/ComicWorks3.png

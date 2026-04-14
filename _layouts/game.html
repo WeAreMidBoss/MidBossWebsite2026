@@ -4,7 +4,7 @@ layout: default
 <article class="post-content container">
   <div class="post-header">
     <p class="post-date">{{ page.media }} | {{ page.release_date }}</p>
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}{% if page.title_line2 %}<br>{{ page.title_line2 }}{% endif %}</h1>
   </div>
   {% if page.logo %}
   <img src="{{ page.logo | relative_url }}" alt="{{ page.title }}" style="max-width: 480px; display: block; margin-bottom: 32px;">
