@@ -10,7 +10,7 @@ links:
   - label: Steam
     url: https://store.steampowered.com/app/1293910
   - label: Nintendo Switch
-    url: https://www.nintendo.com/store/products/read-only-memories-neurodiver-switch/
+    url: https://www.nintendo.com/us/store/products/read-only-memories-neurodiver-switch/
   - label: Xbox
     url: https://www.xbox.com/en-US/games/store/read-only-memories-neurodiver/9N5TD1ZZHSB0
   - label: Website
